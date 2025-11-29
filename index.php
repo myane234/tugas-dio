@@ -134,15 +134,7 @@ h2.page-title{
     position:relative;
     overflow:hidden;
 }
-.card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(120deg,transparent,rgba(0,255,60,0.15),transparent);
-    opacity:0;
-    transition:.3s;
-}
-.card:hover::after{opacity:1;}
+
 .card:hover{
     transform:translateY(-12px) scale(1.03);
     box-shadow:0 0 30px rgba(0,255,60,0.6), 0 0 60px rgba(0,255,60,0.3);
@@ -236,7 +228,7 @@ footer{
 
         <form method="POST" action="keranjang.php">
             <input type="hidden" name="add_id" value="<?= $row['id'] ?>">
-            <button class="btn-add">+ Tambah ke Keranjang</button>
+            <button type="submit" class="btn-add">+ Tambah ke Keranjang</button>
         </form>
     </div>
 <?php endwhile; ?>
