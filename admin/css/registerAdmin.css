@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 30px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(88, 221, 11);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}

@@ -202,6 +202,11 @@ button:hover{
     margin-bottom:10px;
     font-size:14px;
 }
+
+a{
+    text-decoration: none;
+    color: green;
+}
 </style>
 
 <script>
@@ -225,7 +230,7 @@ function showLogin(){
 
 <!-- LOGIN FORM -->
 <div id="login-form">
-    <h2>Kawasaki Login</h2>
+    <h2>Kawasaki Login User</h2>
     <div class="kawasaki-line"></div>
 
     <form method="POST">
@@ -237,11 +242,15 @@ function showLogin(){
     <div class="switch" onclick="showRegister()">
         Belum punya akun? Daftar Sekarang
     </div>
+
+    <div class="switch">
+        <a href="admin/registerAdmin.php">kamu admin?</a>
+    </div>
 </div>
 
 <!-- REGISTER FORM -->
 <div id="register-form" style="display:none;">
-    <h2>Register</h2>
+    <h2>Register User</h2>
     <div class="kawasaki-line"></div>
 
     <form method="POST">
