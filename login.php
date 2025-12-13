@@ -5,7 +5,7 @@ include 'koneksi.php';
 // Jika sudah login, redirect
 if(isset($_SESSION['role'])){
     if($_SESSION['role'] == 'admin'){
-        header("Location: dashboard.php");
+        header("Location: admin/dashboard.php");
     } else {
         header("Location: index.php");
     }
@@ -30,7 +30,7 @@ if(isset($_POST['login'])){
         $_SESSION['role']     = $user['role'];
 
         if($user['role'] == 'admin'){
-            header("Location: dashboard.php");
+            header("Location: admin/dashboard.php");
         } else {
             header("Location: index.php");
         }
